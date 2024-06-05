@@ -76,8 +76,7 @@ export default App;
 
 const sampleCode = `
 import React from 'react';
-import RjsfForm from '@midasit-dev/schemaforms'
-import { toRJSFSchema } from '@midasit-dev/schemaforms/transform';
+import { RjsfForm, toRJSFSchema } from '@midasit-dev/schemaforms';
 
 const App = () => {
 	const [data, setData] = React.useState(null);
