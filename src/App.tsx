@@ -49,7 +49,7 @@ const App = () => {
       <Routes>
         <Route path="rjsf" element={<RjsfTester />} />
         <Route path="moaui" element={<MoauiTester />} />
-        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
