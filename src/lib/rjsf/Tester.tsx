@@ -43,6 +43,7 @@ const App = () => {
           />
         </div>
       </moa.GuideBox>
+			
       <div style={{ position: "fixed", left: 10, bottom: 10 }}>
         <moa.GuideBox spacing={2} horRight>
           <moa.Button onClick={() => setLeftBottomShow(!leftBottomShow)}>
@@ -94,7 +95,6 @@ const App = () => {
 
 export default App;
 `;
-
 
 const functionSchema = {
 	"name": "text_to_plate_mesh",

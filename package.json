@@ -1,13 +1,13 @@
 {
   "name": "@midasit-dev/schemaforms",
   "version": "0.1.0",
-	"keywords": [
+  "keywords": [
     "moaui",
     "midasit",
     "plugin",
-		"schema"
+    "schema"
   ],
-	"author": {
+  "author": {
     "name": "midasit DEV",
     "email": "developer@midasit.com",
     "url": "https://github.com/midasit-dev"
@@ -18,7 +18,7 @@
   },
   "homepage": "https://midasit-dev.github.io/schemaforms",
   "contributors": [
-    { 
+    {
       "name": "lhy0118"
     },
     {
@@ -28,12 +28,12 @@
       "name": "kh1012"
     }
   ],
-	"private": false,
+  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "browser": "./browser/specific/main.js",
-	"peerDependencies": {
-		"@rjsf/core": "^5.18.4",
+  "peerDependencies": {
+    "@rjsf/core": "^5.18.4",
     "@rjsf/mui": "^5.18.4",
     "@rjsf/utils": "^5.18.4",
     "@rjsf/validator-ajv8": "^5.18.4",
@@ -41,26 +41,26 @@
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-	},
+  },
   "dependencies": {
-		"@rjsf/core": "^5.18.4",
+    "@midasit-dev/moaui": "^0.1.136",
+    "@rjsf/core": "^5.18.4",
     "@rjsf/mui": "^5.18.4",
     "@rjsf/utils": "^5.18.4",
     "@rjsf/validator-ajv8": "^5.18.4",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-		"@midasit-dev/moaui": "^0.1.136"
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
-		"move": "rmdir /s /q docs && rename build docs",
+    "move": "rmdir /s /q docs && rename build docs",
     "build": "react-scripts build && npm run move",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-		"prepare-npmjs": "tsc -p tsconfig.npm.json",
-		"publish-npmjs": "npm run prepare-npmjs && cd ./dist && npm publish --access public"
+    "prepare-npmjs": "tsc -p tsconfig.npm.json",
+    "publish-npmjs": "npm run prepare-npmjs && cd ./dist && npm publish --access public"
   },
   "eslintConfig": {
     "extends": [
@@ -82,7 +82,8 @@
   },
   "devDependencies": {
     "@monaco-editor/react": "^4.6.0",
-		"react-scripts": "5.0.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
     "typescript": "^4.9.5"
   }
 }
