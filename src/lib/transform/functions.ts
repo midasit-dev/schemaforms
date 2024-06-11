@@ -4,7 +4,13 @@
  * @returns react-jsonschema-form schema
  */
 export function toRJSFSchema(schema: any): any {
-  const { name, parameters, description } = JSON.parse(JSON.stringify(schema));
+  const parsed = JSON.parse(JSON.stringify(schema));
+	//만약 parsed에 name이 없다면
+	if (!parsed.name || !parsed.parameters || !parsed.description) {
+		return {};
+	}
+	const { name, description, parameters } = parsed;
+	
   return {
     title: name,
     description,

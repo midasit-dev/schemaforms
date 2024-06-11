@@ -1,5 +1,6 @@
 {
   "name": "@midasit-dev/schemaforms",
+	"private": false,
   "version": "0.1.0",
   "keywords": [
     "moaui",
@@ -28,7 +29,6 @@
       "name": "kh1012"
     }
   ],
-  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "browser": "./browser/specific/main.js",
@@ -59,7 +59,7 @@
     "build": "react-scripts build && npm run move",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare-npmjs": "tsc -p tsconfig.npm.json",
+    "prepare-npmjs": "node prepare.js && tsc -p tsconfig.npm.json",
     "publish-npmjs": "npm run prepare-npmjs && cd ./dist && npm publish --access public"
   },
   "eslintConfig": {
@@ -84,5 +84,6 @@
     "@monaco-editor/react": "^4.6.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5"
-  }
+  },
+	"license": "MIT"
 }
